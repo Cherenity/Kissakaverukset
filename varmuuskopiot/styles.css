@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spicy Rice', cursive;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--clr-brown);
+}
+
+ /* Colors as variables (easy to change theme)*/
+:root {
+  --clr-black: #000000;
+  --clr-white: #FFFFFF;
+  --clr-brown: #967E76;
+  --clr-hover: #473939;
+  --clr-beige: #D7C0AE;
+  --clr-yellow: #EEE3CB;
+  --clr-greyblue: #B7C4CF;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+}
+
+#brown-bar {
+  width: 100%;
+  height: 50px;
+  background-color: var(--clr-brown);
+}
+h1 a{
+  color: var(--clr-yellow);
+  text-decoration: none;
+}
+h1 a:hover{
+  color: var(--clr-hover)
+}
+
+#brown-bar h1 {
+  padding-left: 10px;
+}
+
+.beige-bar {
+  background-color: var(--clr-beige);
+  height: 10px;
+}
+#yellow-bar {
+  background-color:  var(--clr-yellow);
+  height: 40px;
+}
+
+#yellow-bar h2{
+  padding-left: 40px;
+  color: var(--clr-brown);
+}
+
+
+#button-list {
+  padding-top: 10px;
+  padding-left: 55%;
+  list-style-type: none; /*Removes bullet points */
+}
+#button-list  li {
+  padding-top: 10px;
+  padding-right: 10px;
+  display: inline;
+}
+
+button{
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: var(--clr-yellow);
+  background-color: var(--clr-brown);
+  border: 2px solid var(--clr-beige);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+button:hover{
+  background-color: var(--clr-hover);
+}
+
+
+/* -- HAMBURGER NAVIGATION BAR START- */
+#menu-toggle {
+  position: fixed;
+  top: 13px;
+  right: 20px;
+  z-index: 1;
+}
+
+#menu-toggle input {
+  position: absolute;
+  width:35px;
+  height: 23px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; /* in order to place the checkbox over the hamburguer */
+  -webkit-touch-callout: none;
+}
+
+#menu-toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  background: #EEE3CB;
+  border-radius: 3px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+              background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), 
+              opacity 0.55s ease;
+}
+
+#menu-toggle input:checked ~ span {
+  background:var(--clr-hover);
+}
+
+#menu-toggle input:checked ~ span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle input:checked ~ span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle input:checked ~ span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+#menu {
+  position: fixed;
+  right: 0;
+  top: 65px;
+  width: 200px;
+  padding: 50px;
+  background:var(--clr-brown);
+  list-style-type: none;
+  transition: transform 0.5s, opacity 0.5s;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+  border: 2px solid  var(--clr-beige);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menu li a{
+  color: var(--clr-yellow);
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 5px;
+  border: 2px solid var(--clr-beige);
+  border-radius: 10px;
+}
+
+#menu li a:hover{
+  color: var(--clr-hover);
+}
+
+
+#menu-toggle input:checked ~ ul {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* -- HAMBURGER NAVIGATION BAR END */
+
+
+/* CONTENT */
+
+/* flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+background-color: #ffffff;
+display: flex;
+height:90vh;
+gap: 10px;
+width: 100%; */
+
+main {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+}
+
+
+#main-kissakaverukset {
+flex-direction: row;
+justify-content: right;
+align-items: center;
+flex-wrap: wrap-reverse;
+padding-top: 20px;
+padding-bottom: 30px;
+
+}
+
+.blue-effect {
+  margin-top: 240px;
+  margin-right:90px;
+  position: relative;
+  background-color: var(--clr-greyblue);
+  width: 400px;
+  height: 100px;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end; /* or center */
+  justify-content: center;
+ 
+}
+
+.text-container {
+  color: var(--clr-brown);
+  border: 3px solid var(--clr-beige);
+  border-radius: 15px;
+  height: 300px;
+  width: 350px;
+  margin-bottom: 30px;
+  position: relative;
+  background-color: var(--clr-yellow);
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align:left;
+  
+}
+
+.text-container img{
+  margin-top: 40px;
+  padding-left: 200px;
+  height: 160px;
+  filter: brightness(150%);
+}
+
+.picture-container {
+  position: relative;
+  background-color: var(--clr-greyblue);
+  width: 600px;
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 25px;
+  
+}
+
+.picture-container img {
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  filter: brightness(150%);
+}
+
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: var(--clr-brown);
+  width: 100%;
+  height: 40px;
+  text-align: right;
+}
+footer h2 {
+  color: var(--clr-yellow);
+  padding-right: 100px;
+}
+
+
+#main-touhut{
+  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  
+
+}
+
+#main-touhut div{
+  margin-top: 30px;
+  margin-left: 10px;
+  height:150px;
+  width: 500px;
+  background-color: #967E76;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+
+}
+
+#main-touhut div .text-container{
+  margin-top: 0;
+  width: 300px;
+  color:rebeccapurple
+  
+}
+
+
+
+
+ 
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  button {
+
+    display: none;
+  }
+  #box1 {
+    margin-right: 0px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  button {
+
+    display: none;
+  }
+}

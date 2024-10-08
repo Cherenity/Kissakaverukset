@@ -1,0 +1,67 @@
+
+#main-kissakaverukset {
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  
+  }
+  
+  .blue-effect {
+    margin-top: 240px;
+    margin-right:90px;
+    position: relative;
+    background-color: var(--clr-greyblue);
+    width: 400px;
+    height: 100px;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end; /* or center */
+    justify-content: center;
+   
+  }
+  
+  .text-container {
+    color: var(--clr-brown);
+    border: 3px solid var(--clr-beige);
+    border-radius: 15px;
+    height: 300px;
+    width: 350px;
+    margin-bottom: 30px;
+    position: relative;
+    background-color: var(--clr-yellow);
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align:left;
+    
+  }
+  
+  .text-container img{
+    margin-top: 40px;
+    padding-left: 200px;
+    height: 160px;
+    filter: brightness(150%);
+  }
+  
+  .picture-container {
+    position: relative;
+    background-color: var(--clr-greyblue);
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 25px;
+    
+  }
+  
+  .picture-container img {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    filter: brightness(150%);
+  }
