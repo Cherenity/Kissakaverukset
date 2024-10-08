@@ -222,6 +222,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: row;
+
 }
 
 
@@ -230,8 +231,8 @@ main {
 justify-content: flex-end;
 align-items: center;
 flex-wrap: wrap-reverse;
-padding-top: 20px;
-padding-bottom: 30px;
+padding-top: 10vh;
+padding-bottom: 20vh;
 
 }
 
@@ -490,4 +491,3 @@ footer h2 {
   button {
     display: none;
   }
-}

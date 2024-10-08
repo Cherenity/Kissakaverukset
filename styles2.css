@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spicy Rice', cursive;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+ /* Font sizes*/
+body {
+  background-color: var(--clr-white);
+}
+h1{
+  font-size: 2rem;
+}
+h2{
+  font-size: 1,5rem;
+}
+p{
+  font-size: 1rem;
+}
+
+ /* Colors as variables (easy to change theme)*/
+ :root {
+  --clr-black: #000000;
+  --clr-white: #FFFFFF;
+  --clr-brown: #967E76;
+  --clr-hover: #473939;
+  --clr-beige: #D7C0AE;
+  --clr-yellow: #EEE3CB;
+  --clr-greyblue: #B7C4CF;
+}
+
+/* -- header section --  vw width vh height*/
+
+header {
+  top: 0;
+  position:sticky;
+  background-color: var(--clr-brown);
+  width: 100vw;
+  height: 100px;
+}
+header h1{
+  padding-left: 60px;
+  background-color: var(--clr-brown);
+  color: var(--clr-yellow);
+}
+header h2{
+  padding-left: 100px;
+  background-color: var(--clr-yellow);
+  color: var(--clr-brown);
+  height: 45px;
+}
+header div{
+  background-color: var(--clr-beige);
+  height: 10px;
+}
+
+#button-list {
+  padding-top: 10px;
+  padding-left: 55%;
+  list-style-type: none; /*Removes bullet points */
+}
+#button-list  li {
+  padding-top: 10px;
+  padding-right: 10px;
+  display: inline;
+}
+button{
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: var(--clr-yellow);
+  background-color: var(--clr-brown);
+  border: 2px solid var(--clr-beige);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+button:hover{
+  background-color: var(--clr-hover);
+}
+
+.divide-content{
+  background-color: var(--clr-white);
+  height: 40px;
+  width: 100vw;
+}
+
+/* -- HAMBURGER NAVIGATION BAR START- */
+
+#menu-toggle {
+  position: fixed;
+  top: 13px;
+  right: 20px;
+  z-index: 1;
+}
+
+#menu-toggle input {
+  position: absolute;
+  width:35px;
+  height: 23px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; /* in order to place the checkbox over the hamburguer */
+  -webkit-touch-callout: none;
+}
+
+#menu-toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  background: #EEE3CB;
+  border-radius: 3px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+              background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), 
+              opacity 0.55s ease;
+}
+
+#menu-toggle input:checked ~ span {
+  background:var(--clr-hover);
+}
+#menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+#menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+}
+#menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(45deg) translate(-8px, -5px);
+}
+
+#menu {/* Hamburger -menu- */
+  position: fixed;
+  right: 0;
+  top: 65px;
+  list-style-type: none;
+  transition: transform 0.5s, opacity 0.5s;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  margin-right: 10px;
+
+}
+
+#menu img{
+  filter: brightness(150%);
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+}
+#menu ul {
+  list-style-type: none; 
+  margin-top: 75px;
+  background:var(--clr-brown);
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 6px solid  var(--clr-beige);
+}
+#menu li {
+  padding: 10px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+#menu li a{
+  color: var(--clr-yellow);
+  text-decoration: none;
+  padding: 5px;
+  border-bottom: 2px dashed var(--clr-beige);
+  border-radius: 3px;
+}
+#menu li a:hover{
+  color: var(--clr-hover);
+}
+
+#menu-toggle input:checked ~ div {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* -- CONTENT START - */
+
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: center;
+  justify-content:center; */
+  gap: 10px;
+  background-color: #d1b3b3; 
+}
+
+#kissakaverukset{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.text-container {
+  position:relative;
+  height: 450px;
+  width: 450px;
+  background-color: #473939;
+}
+.text-box{
+  position:absolute;
+  color: var(--clr-brown);
+  border: 3px solid var(--clr-beige);
+
+  border-radius: 15px;
+  height: 350px;
+  width: 350px;
+  background-color: var(--clr-yellow);
+}
+
+
+.blue-effect {
+  position:absolute;
+  background-color: var(--clr-greyblue);
+  width: 200px;
+  height: 100px;
+  border-radius: 15px;
+  /* display: flex;
+  align-items: flex-end; /* or center */
+  /* justify-content: center; */ */
+ 
+}
+
+footer{
+  width: 100vw;
+  background-color: aqua;
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+}
+
+.picture-container {
+  position: relative;
+  background-color: var(--clr-greyblue);
+  width: 600px;
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 25px;
+  
+}
+
+.picture-container img {
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  filter: brightness(150%);
+}
+
+
+
+
+
+
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  button {
+    display: none;
+  }
+
+
+}
+
