@@ -65,6 +65,16 @@ header a:hover h1 {
   color: var(--clr-hover);
 }
 
+header a h1{
+  transition: color 0.8s ease, transform 0.1s; 
+}
+
+/* Active state for header links */
+header a h1:active {
+  transform: scale(0.98); /* Smooth shrink on press */
+  color: var(--clr-brown); /* Change background color on press */
+}
+
 
 header a{
   text-decoration: none;
@@ -103,12 +113,19 @@ button{
   color: var(--clr-yellow);
   background-color: var(--clr-brown);
   border: 2px solid var(--clr-beige);
+  transition: background-color 0.5s ease, transform 0.1s ease-in;
   border-top: none;
   border-radius: 0 0 5px 5px;
+  
 }
 
 button:hover{
   background-color: var(--clr-hover);
+}
+
+button:active {
+  transform: scale(0.95); /* Smooth shrink on press */
+  background-color: var(--clr-beige); /* Change background color on press */
 }
 
 
