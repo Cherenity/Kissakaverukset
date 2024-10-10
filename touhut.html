@@ -4,96 +4,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kissakaverukset</title>
+
   <!--Google fonts | Spicy Rice | Connect to API and import the font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
- 
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 
+
 <body>
-  <!--Header -->
-<header class="heade-container">
-  <div id = "brown-bar">
-    <h1><a href="index.html">Kissakaverukset</a></h1>
-  </div>
-  <div class= "beige-bar">
-    <ul id ="button-list">
-      <li><a href="touhut.html"><button>Touhut</button></a></li>
-      <li><a href="lelut.html"><button>Lelut</button></a></li>
-      <li><a href="info.html"><button>Info</button></a></li>
-    </ul>
-  </div>
-  <div id= "yellow-bar">
+   <!-- Header -->
+   <header>
+    <a href="index.html"><h1>Kissakaverukset</h1></a>
+  
+    <div class="beige-bar">
+      <ul id ="button-list">
+        <li><a href="touhut.html"><button>Touhut</button></a></li>
+        <li><a href="lelut.html"><button>Lelut</button></a></li>
+        <li><a href="info.html"><button>Info</button></a></li>
+      </ul>
+    </div>
+  
     <h2>Kissojen Touhuja</h2>
-  </div>
-</header>
-
-<div id="menu-toggle">
-  <input type="checkbox" />
-  <span></span>
-  <span></span>
-  <span></span>
+  </header>
+  <div class="divide-content"></div>
   
-  <div id="menu">
-    <img src="./pictures/moccapeek.png" alt="Happy bengal cat.">
-    <ul >
-      <li><a href="touhut.html">Touhut</a></li>
-      <li><a href="lelut.html">Lelut</a></li>
-      <li><a href="info.html">Info</a></li>
-    </ul>
-  </div> 
-</div>
-
-<!--Content -->
-  <main id="main-touhut">
-    <div id="kokonaisuus1">   
-      <div class = "blue-effect">
-        <img src="./pictures/kissa-ympyra.jpg" alt="cats jin yang."> 
-        <div class="text-container"> <h2>Jin & Jang</h2><p>Kissat nukkuvat yhdessä heidän ympyrä pessässään jin ja yang muodossa.</p><p class="pvm-muotoilu">07.10.2024</p></div>
-      </div> 
-    </div>
-    <div id="kokonaisuus2">
-      <div class = "blue-effect">
-        <img src="./pictures/f42f5227-f736-4b90-a3f6-0a862e89e112.jpg" alt="cats jing yang."> 
-        <div class="text-container"> <h2>Otsikko</h2><p>Tekstiä</p><p>pvm</p></div>
-      </div> 
-    </div>
-    <div id="kokonaisuus3">
-      <div class = "blue-effect">
-        <img src="./pictures/WhatsApp Image 2023-08-26 at 00.07.08.jpeg" alt="cats jing yang."> 
-        <div class="text-container"> <h2>Otsikko</h2><p>Tekstiä</p><p>pvm</p></div>
-      </div> 
-    </div>
-    <div id="kokonaisuus4">
-      <div class = "blue-effect">
-        <img src="./pictures/efea015d-2953-4653-884b-357e282bacc9.jpg" alt="cats jing yang."> 
-        <div class="text-container"> <h2>Otsikko</h2><p>Tekstiä</p><p>pvm</p></div>
-      </div> 
-    </div>
-    <div id="kokonaisuus4">
-      <div class = "blue-effect">
-        <img src="./pictures/WhatsApp Image 2023-08-26 at 00.07.10 (1).jpeg" alt="cats jing yang."> 
-        <div class="text-container"> <h2>Otsikko</h2><p>Tekstiä</p><p>pvm</p></div>
-      </div> 
-    </div>
-    <div id="kokonaisuus5">
-            <div class = "blue-effect">
-        <img src="./pictures/mocca-first-page.webp" alt="cats jing yang."> 
-        <div class="text-container"> <h2>Otsikko</h2><p>Tekstiä</p><p>pvm</p></div>
-      </div> 
-    </div>
-  </main>
-
-  
-  
-  <footer class= "footer-container">
-    <div class="beige-bar"></div>
-    <h2>&copy; 2024 Jonna Isosaari</h2>
-  </footer>
+  <!--Hanburger -->
+  <div id="menu-toggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
     
+    <div id="menu">
+      <img src="./pictures/moccapeek.png" alt="Happy bengal cat.">
+      <ul >
+        <li><a href="touhut.html">Touhut</a></li>
+        <li><a href="lelut.html">Lelut</a></li>
+        <li><a href="info.html">Info</a></li>
+      </ul>
+    </div>
+    
+  </div>
+  
+<!--Content -->
+<main id="touhut">
+  
+  <div id="kokonaisuus">
+    
+    <div class = container>
+    <img src="./pictures/etusivun-kuva.jpeg" height=100px  alt= "Two cats sleeping together in the same bed.">
+    </div>
+
+    <div class=blue-effect></div>
+
+    <div class = "text-box">
+      <h2>Tervetuloa!</h2>
+        <br>
+      <p>Lyhyt teksti</p>
+    </div>
+
+  </div>
+
+  <div id="kokonaisuus">
+    
+    <div class = container>
+    <img src="./pictures/etusivun-kuva.jpeg" height=100px  alt= "Two cats sleeping together in the same bed.">
+    </div>
+    
+    <div class=blue-effect></div>
+
+    <div class = "text-box">
+      <h2>Tervetuloa!</h2>
+        <br>
+      <p>Lyhyt teksti</p>
+    </div>
+
+  </div>
+  
+  <div id="kokonaisuus">
+    
+    <div class = container>
+    <img src="./pictures/etusivun-kuva.jpeg" height=100px  alt= "Two cats sleeping together in the same bed.">
+    </div>
+    
+    <div class=blue-effect></div>
+
+    <div class = "text-box">
+      <h2>Tervetuloa!</h2>
+        <br>
+      <p>Lyhyt teksti</p>
+    </div>
+
+  </div>
+  
+  <div id="kokonaisuus">
+    
+    <div class = container>
+    <img src="./pictures/etusivun-kuva.jpeg" height=100px  alt= "Two cats sleeping together in the same bed.">
+    </div>
+    
+    <div class=blue-effect></div>
+
+    <div class = "text-box">
+      <h2>Tervetuloa!</h2>
+        <br>
+      <p>Lyhyt teksti</p>
+    </div>
+
+  </div>
+  
+  <div id="kokonaisuus">
+    
+    <div class = container>
+    <img src="./pictures/etusivun-kuva.jpeg" height=100px  alt= "Two cats sleeping together in the same bed.">
+    </div>
+    
+    <div class=blue-effect></div>
+
+    <div class = "text-box">
+      <h2>Tervetuloa!</h2>
+        <br>
+      <p>Lyhyt teksti</p>
+    </div>
+
+  </div>
+  
+  <div id="kokonaisuus">
+    
+    <div class = container>
+    <img src="./pictures/etusivun-kuva.jpeg" height=100px  alt= "Two cats sleeping together in the same bed.">
+    </div>
+    
+    <div class=blue-effect></div>
+
+    <div class = "text-box">
+      <h2>Tervetuloa!</h2>
+        <br>
+      <p>Lyhyt teksti</p>
+    </div>
+
+  </div>
+  
+    <div id="kokonaisuus">
+    
+    <div class = container>
+    <img src="./pictures/etusivun-kuva.jpeg" height=100px  alt= "Two cats sleeping together in the same bed.">
+    </div>
+    
+    <div class=blue-effect></div>
+
+    <div class = "text-box">
+      <h2>Tervetuloa!</h2>
+        <br>
+      <p>Lyhyt teksti</p>
+    </div>
+
+  </div>
   
   
+
+
+
+
+
+
+</main>
+
+
+  
+  
+  <footer>
+  <div class="beige-bar"></div>
+  <h2>&copy; 2024 Jonna Isosaari</h2>
+  </footer>
+  
+  
+  
+  
+  
+  <!--End-->
 </body>
 </html>
