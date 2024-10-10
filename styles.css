@@ -468,6 +468,8 @@ footer h2 {
 }
 
 
+
+
 /* -- INFO END --*/
  
 
@@ -485,9 +487,3 @@ footer h2 {
   }
 
 }
-
-@media (max-width: 600px) {
-
-  button {
-    display: none;
-  }
