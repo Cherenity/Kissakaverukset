@@ -58,7 +58,6 @@ header {
 header h1{
   padding-left: 60px;
   background-color: var(--clr-brown);
-  
 }
 
 header h1 a{
@@ -71,31 +70,26 @@ header h1 a:hover{
 
 header h1 a{
   transition: color 0.8s ease, transform 0.1s; 
+  color: var(--clr-yellow);
+  text-decoration: none;
 }
 
 /* Active state for header links */
 header a h1:active {
   transform: scale(0.98); /* Smooth shrink on press */
-  color: var(--clr-brown); /* Change background color on press */
+  color: var(--clr-hover) /* Change background color on press */
 }
-
-
-header a{
-  text-decoration: none;
-}
-
-
 
 header h2{
   padding-top: 2px;
   padding-left: 95px;
   background-color: var(--clr-yellow);
   color: var(--clr-brown);
-  height: 60px;
+  height: 50px;
 }
 .beige-bar {
   background-color: var(--clr-beige);
-  height: 20px;
+  height: 10px;
 }
 
 #button-list {
@@ -118,8 +112,8 @@ button{
   background-color: var(--clr-brown);
   border: 6px solid var(--clr-beige);
   transition: background-color 0.5s ease, transform 0.1s ease-in;
-  border-top: none;
-  border-radius: 0 0 5px 5px;
+  
+  border-radius:5px;
   
 }
 
@@ -362,9 +356,9 @@ main {
   position: relative;
   z-index: 2; 
   height: 300px;
-  height: 25vh;
   width: 250px;
   max-width: 40vw;
+  max-height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -373,7 +367,8 @@ main {
   z-index: 1;
   margin: 0;
   width: 500px;
-  max-width: 50vw;
+  max-width: 80%;
+  max-height: 40%;
   left: 0;
   bottom: 0;
 }
@@ -428,6 +423,7 @@ main {
   height: 300px;
   height: 30vh;
   max-width: 40vw;
+  max-height: 90%;
   border-radius: 15px;
 }
 
@@ -455,7 +451,7 @@ main {
 footer{
   position: relative;
   width: 100vw;
-  height: 70px;
+  height: 55px;
   background-color: var(--clr-brown);
   z-index: 10;
   position: fixed;
