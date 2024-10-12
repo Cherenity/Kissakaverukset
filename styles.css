@@ -147,7 +147,6 @@ header h2{
   cursor: pointer;
   opacity: 0;
   z-index: 5; /* in order to place the checkbox over the hamburguer */
-  -webkit-touch-callout: none;
 }
 
 #menu-toggle span {
@@ -501,7 +500,7 @@ main {
 #kissa-info .text-box {
   height: 480px;
   padding: 28px;
-  text-overflow: auto;
+  overflow: auto;
 }
 
 .lelut-linkki {
