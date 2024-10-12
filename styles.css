@@ -423,7 +423,6 @@ main {
 }
 
 
-
 #lelut-kokonaisuus {
   margin-left: 20px;
   position: relative;
@@ -503,6 +502,13 @@ main {
   height: 480px;
   padding: 28px;
   text-overflow: auto;
+}
+
+.lelut-linkki {
+  font-size: clamp(1rem, 1.5vw + 1rem, 1.6rem);
+  display: inline-block;
+  padding-top: 20px;
+  color: var(--clr-hover);
 }
 
 #kissa-info .blue-effect {
