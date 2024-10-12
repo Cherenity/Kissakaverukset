@@ -400,15 +400,20 @@ main {
 
 /* -- Lelut -- */
 
+
 #lelut {
   padding-top: 8vh;
   padding-bottom: 12vh;
   justify-content:flex-start;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;  
   gap:30px;
 }
 
+
+
 #lelut-kokonaisuus {
+  margin-left: 20px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -425,25 +430,32 @@ main {
 
 
 #lelut img {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  left: 0;
+  /* z-index: 2; */
   height: 100%;
-  max-width: 50vw;
+  max-width: 70%;
   object-fit: cover;
   border-radius: 15px;
-  border: 8px solid var(--clr-greyblue);
 }
 
-/* #lelut-kokonaisuus .blue-effect {
+#lelut video {
+  position: absolute;
+  left: 0;
+  max-height: 100%;
+  border-radius: 0px 15px 15px 0px;
+  max-width: 50vw;
+  border-left: none;
+}
+
+#lelut-kokonaisuus .blue-effect {
   z-index: 1;
   margin: 0;
-  height: 100%;
-  width: 250px;
-  margin-right: 24px;
-  max-width: 50vw;
-  right: 0;
+  height: 40%;
+  left: 0;
   bottom: 0;
-} */
+  width:96%;
+}
 
 #lelut-kokonaisuus .text-box{
   z-index: 2;
@@ -453,7 +465,32 @@ main {
   width: 50%;
   max-width: 50vw;
   padding: 14px;
+  border-radius: 15px 0px 0px 15px;
+
 }
+
+
+/* -- Kissa Info -- */
+
+#kissa-info {
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  min-height: 80vh;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
+}
+
+
+#kissa-info .picture-container {
+  justify-content: right;
+  padding-right: 25px;
+}
+
+
+
+
+
 
 
 /* -- Footer -- */
@@ -473,16 +510,6 @@ footer h2{
   text-align: right;
   padding-right: 30px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -548,6 +575,39 @@ footer h2{
     right: 10px;
 
   }
+  #lelut {
+    padding-top: 6vh;
+  }
+
+
+  #lelut-kokonaisuus {
+    margin-left: 0px;
+  }
+
+  #lelut-kokonaisuus .text-box{
+    border-radius: 0px;
+  }
+
+/* Kissa-info- */
+  #kissa-info {
+    padding-top: 4vh;
+    padding-bottom: 12vh;
+  }
+
+  #kissa-info .picture-container {
+    justify-content: center;
+    padding-right: 0px;
+  }
+
+
+  #kissa-info .text-container {
+    margin-bottom: 54px;
+  }
+
+  #kissa-info .text-container > * {
+    border-radius: 0px;
+  }
+
 
 }
 
@@ -569,5 +629,11 @@ footer h2{
     max-width: 80vw;
     max-height: 40vh;
     border-radius: 20px;
+  }
+
+  #menu-toggle {
+    top:10px;
+    right: 10px;
+
   }
 }
