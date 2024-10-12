@@ -104,6 +104,7 @@ header h2{
   display: inline;
 }
 button{
+
   display: inline-block;
   cursor: pointer;
   font-size: clamp(1.5rem, 1.5vw + 1rem, 1.8rem);
@@ -240,6 +241,7 @@ main {
   justify-content:center;
   align-items: center;
   flex-wrap: wrap-reverse;
+  min-height: 80vh;
   padding-top: 12vh;
   padding-bottom: 12vh;
 }
@@ -362,6 +364,13 @@ main {
   max-height: 100%;
   object-fit: cover;
   border-radius: 15px;
+}
+
+#touhut video{
+  height: 300px;
+  max-height: 100%;
+  border-radius: 15px;
+
 }
 
 #kokonaisuus .blue-effect {
@@ -542,8 +551,8 @@ footer h2{
 
 }
 
-/* Ipad etc. */
-@media (max-width: 1000px)  {
+/* Ipad etc. Need to check the sizing */
+@media (max-width: 1100px)  {
   button {
     display: none;
   }
