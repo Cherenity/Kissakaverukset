@@ -104,7 +104,6 @@ header h2{
   display: inline;
 }
 button{
-
   display: inline-block;
   cursor: pointer;
   font-size: clamp(1.5rem, 1.5vw + 1rem, 1.8rem);
