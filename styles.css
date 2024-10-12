@@ -236,10 +236,10 @@ main {
   flex-direction: row;
 }
 
-#tervetuloa-otsikko {
+.otsikko-vali {
   padding-bottom: 10px;
 }
-.kotisivu-teksti {
+.teksti-vali {
   padding-bottom: 10px;
 }
 
@@ -393,6 +393,8 @@ main {
 #touhut .text-box{
   z-index: 2;
   position:absolute;
+  overflow: auto;
+  padding: 10px;
   right: 0;
   height: 100%;
   width: 50%;
@@ -468,13 +470,13 @@ main {
   position:absolute;
   left: 0;
   height: 100%;
+  max-height: 100%;
   width: 50%;
-  max-width: 50vw;
+  max-width: 50%;
   padding: 14px;
   border-radius: 15px 0px 0px 15px;
-
+  overflow: auto; 
 }
-
 
 /* -- Kissa Info -- */
 
@@ -492,12 +494,6 @@ main {
   justify-content: right;
   padding-right: 25px;
 }
-
-
-
-
-
-
 
 /* -- Footer -- */
 footer{
@@ -530,7 +526,6 @@ footer h2{
   }
 
   #touhut #kokonaisuus .text-box{
-    
     border: 6px solid var(--clr-beige);
     border-right: none;
     border-radius: 15px 0px 0px 15px;
