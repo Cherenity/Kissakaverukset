@@ -236,6 +236,13 @@ main {
   flex-direction: row;
 }
 
+#tervetuloa-otsikko {
+  padding-bottom: 10px;
+}
+.kotisivu-teksti {
+  padding-bottom: 10px;
+}
+
 #kissakaverukset{
   justify-content:center;
   align-items: center;
