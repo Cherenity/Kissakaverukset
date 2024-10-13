@@ -342,7 +342,7 @@ main {
   gap:30px;
 }
 
-#kokonaisuus {
+.kokonaisuus {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -384,7 +384,7 @@ main {
 
 }
 
-#kokonaisuus .blue-effect {
+.kokonaisuus .blue-effect {
   z-index: 1;
   margin: 0;
   width: 500px;
@@ -567,7 +567,7 @@ footer h2{
     height:530px;
   }
 
-  #touhut #kokonaisuus .text-box{
+  #touhut .kokonaisuus .text-box{
     border: 6px solid var(--clr-beige);
     border-right: none;
     border-radius: 15px 0px 0px 15px;
