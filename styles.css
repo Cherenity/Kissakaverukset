@@ -544,6 +544,16 @@ footer h2{
 
 /* Phone */
 @media (max-width: 600px) {
+
+  header h1{
+    padding-left: 10px;
+  }
+  
+  header h2{
+    padding-left: 12px;
+  }
+
+
   .btn-link {
     display: none;
   }
