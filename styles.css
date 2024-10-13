@@ -424,7 +424,7 @@ main {
 }
 
 
-#lelut-kokonaisuus {
+.lelut-kokonaisuus {
   margin-left: 20px;
   position: relative;
   display: flex;
@@ -435,7 +435,7 @@ main {
   width: 600px;
 }
 
-#lelut-kokonaisuus .container{
+.lelut-kokonaisuus .container{
   left: auto;
   right: 0;
 }
@@ -460,7 +460,7 @@ main {
   border-left: none;
 }
 
-#lelut-kokonaisuus .blue-effect {
+.lelut-kokonaisuus .blue-effect {
   z-index: 1;
   margin: 0;
   height: 40%;
@@ -469,7 +469,7 @@ main {
   width:96%;
 }
 
-#lelut-kokonaisuus .text-box{
+.lelut-kokonaisuus .text-box{
   z-index: 2;
   position:absolute;
   left: 0;
@@ -624,11 +624,11 @@ footer h2{
   }
 
 
-  #lelut-kokonaisuus {
+  .lelut-kokonaisuus {
     margin-left: 0px;
   }
 
-  #lelut-kokonaisuus .text-box{
+  .lelut-kokonaisuus .text-box{
     border-radius: 0px;
   }
 
