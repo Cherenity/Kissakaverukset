@@ -7,6 +7,17 @@
 
 }
 
+ /* Colors as variables (easy to change theme)*/
+ :root {
+  --clr-black: #000000;
+  --clr-white: #FFFFFF;
+  --clr-brown: #967E76;
+  --clr-hover: #473939;
+  --clr-beige: #D7C0AE;
+  --clr-yellow: #EEE3CB;
+  --clr-greyblue: #B7C4CF;
+}
+
 body {
   background-color: var(--clr-white);
 }
@@ -34,16 +45,7 @@ body {
     font-size: clamp(1rem, 1.5vw + 1rem, 1.6rem);
   }
 
- /* Colors as variables (easy to change theme)*/
- :root {
-  --clr-black: #000000;
-  --clr-white: #FFFFFF;
-  --clr-brown: #967E76;
-  --clr-hover: #473939;
-  --clr-beige: #D7C0AE;
-  --clr-yellow: #EEE3CB;
-  --clr-greyblue: #B7C4CF;
-}
+
 
 /* -- header section --  vw width vh height*/
 
