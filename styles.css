@@ -6,11 +6,11 @@
   box-sizing: border-box;
 
 }
- /* Font sizes*/
+
 body {
   background-color: var(--clr-white);
-}*
-
+}
+ /* Font sizes*/
 /* h1 headings:
    Minimum size of 2rem
    Preferred size scales with viewport width (2vw + 1rem)
@@ -516,7 +516,6 @@ main {
 }
 
 #kissa-info .text-container img{
-  margin-right: 20;
   margin-bottom: 0px;
   margin-right: 25px;
   height: 220px;
@@ -552,7 +551,7 @@ footer h2{
   header a h1:hover,
   header a h1:focus,
   header a h1:active {
-    background-color: var(--clr-hover); /* Change background color */
+    color: var(--clr-hover); 
   }
 
   header h2{
@@ -669,7 +668,7 @@ footer h2{
   header a h1:hover,
   header a h1:focus,
   header a h1:active {
-    background-color: var(--clr-hover); /* Change background color */
+    color: var(--clr-hover); 
   }
 
   .picture-container {
