@@ -493,7 +493,6 @@ main {
   padding-bottom: 12vh;
 }
 
-
 #kissa-info .picture-container {
   justify-content: right;
   padding-right: 25px;
@@ -517,6 +516,7 @@ main {
 }
 
 #kissa-info .text-container img{
+  margin-right: 20;
   margin-bottom: 0px;
   margin-right: 25px;
   height: 220px;
@@ -645,6 +645,11 @@ footer h2{
   #kissa-info .text-container > * {
     border-radius: 0px;
   }
+
+  #kissa-info .text-container img{
+    height: 150px;
+  }
+
 
 
 }
