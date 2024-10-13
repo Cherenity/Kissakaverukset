@@ -661,7 +661,27 @@ footer h2{
 
 }
 
-/* Ipad etc. Need to check the sizing */
+/* Iphone 4 and older iphones*/
+@media only screen and (max-width: 320px) {
+  /* Your CSS styles for small screens */
+  body {
+    font-size: 14px; /* Example adjustment */
+  }
+
+  #kissa-info .text-container img{
+    height: 100px;
+  }
+
+  .text-container img{
+    height:120px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+
+}
+
+
+/* Ipad and small screens */
 @media (max-width: 1100px)  {
   .btn-link {
     display: none;
@@ -694,4 +714,6 @@ footer h2{
     right: 10px;
 
   }
+
 }
+
