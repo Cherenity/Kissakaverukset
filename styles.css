@@ -266,7 +266,6 @@ main {
   justify-content: center;
   align-items: center;
   position:relative;
-
 }
 /* -- children (h2,p) -- */
 .text-container > * {
@@ -295,6 +294,14 @@ main {
   border-radius: 15px;
   color: var(--clr-brown);
   background-color: var(--clr-yellow);
+}
+
+.text-box a{
+  color: var(--clr-brown);
+}
+
+.text-box a:hover{
+  color: var(--clr-hover);
 }
 
 .blue-effect {
@@ -712,6 +719,18 @@ footer h2{
     right: 10px;
 
   }
+
+  /* Kissa-info- */
+  #kissa-info {
+    padding-top: 4vh;
+    padding-bottom: 12vh;
+  }
+
+  #kissa-info .picture-container {
+    justify-content: center;
+    padding-right: 0px;
+  }
+
 
 }
 
